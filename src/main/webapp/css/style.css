@@ -1,0 +1,117 @@
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: #e6e6ec; /* Fondo de color */
+}
+
+.registration-header {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo de color con transparencia */
+    padding: 20px;
+}
+
+.registration-header h1 {
+    margin: 0;
+}
+
+/* Estilos para el contenedor del formulario */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos del formulario */
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos para los botones */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para los mensajes de error */
+input:invalid {
+    border-color: red;
+}
+
+input:invalid + span::after {
+    content: ' * Campo obligatorio';
+    color: red;
+    font-size: 12px;
+    margin-left: 5px;
+}
+/* Estilos para los campos de selección de fecha */
+#dia, #mes, #ano {
+    width: 80px; /* Ancho fijo para los campos */
+}
+
+/* Estilos para la fila de los campos de fecha */
+.form-row-date {
+    display: flex; /* Usar flexbox para alinear los elementos en una fila */
+}
+
+/* Estilos para cada campo de fecha */
+.form-row-date select {
+    margin-right: 10px; /* Espacio entre los campos */
+    flex: 1; /* Los campos de fecha ocupan todo el espacio disponible */
+}
+/* Estilos para la fila de los campos de tipo y número de documento */
+.form-row-document {
+    display: flex; /* Usar flexbox para alinear los elementos en una fila */
+    align-items: center; /* Alinear verticalmente los elementos al centro */
+    margin-bottom: 10px; /* Espacio entre esta fila y las siguientes */
+}
+
+/* Estilos para las etiquetas de los campos */
+.form-row-document label {
+    margin-right: 10px; /* Espacio entre las etiquetas y los campos */
+}
+
+/* Estilos para el campo de selección del tipo de documento */
+.form-row-document select {
+    flex: 1; /* El campo de selección ocupa todo el espacio disponible */
+    margin-right: 10px; /* Espacio entre el campo de selección y el siguiente campo */
+}
+
+/* Estilos para el campo de entrada del número de documento */
+.form-row-document input[type="text"] {
+    flex: 1; /* El campo de entrada ocupa todo el espacio disponible */
+}
+
+
